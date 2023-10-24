@@ -1,0 +1,5 @@
+t=eval(input("Enter Elements in Tuple : "))
+print("Elements in Tuples ====>> {}".format(t))
+f=int(input("Enter Whom Frequence You want to Find : "))
+c=t.count(f)
+print("Frequency of Element {} in tuple {} ===>> {}".format(f,t,c))
