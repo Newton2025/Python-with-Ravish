@@ -35,9 +35,17 @@ def days_months(month):
         print("{} ===>> 31 Days ".format(month))
 def weeks_month(month):
     print("{} ===>> 4.345 Weeks".format(month))
+def days_to_month(days):
+    if days<28 or days<31:
+        print("1 Month")
+    else:
+        month=(int(days/30))
+        extra_days=(int(days%30))
+        print("{} ===>> {} Month and {} Days".format(days,month,extra_days))
+
 
 while True:
-    n=int(input("======== MENU ========= \n1: Enter 1 To Check Leap Year or Not \n2: Enter 2 To Check Number of Days in Year \n3: Enter 3 To Check Days in Month \n4: Enter 4 To Check Weeks in a Month \n5: Enter 0 to Exit \n ========= MENU END ========= \nEnter What You want to see : "))
+    n=int(input("======== MENU ========= \n1: Enter 1 To Check Leap Year or Not \n2: Enter 2 To Check Number of Days in Year \n3: Enter 3 To Check Days in Month \n4: Enter 4 To Check Weeks in a Month \n5: Enter 5 To Convert Days into Month \n6: Enter 0 to Exit \n ========= MENU END ========= \nEnter What You want to see : "))
     if n==1:
         y=leap_year_or_not(int(input("Enter a Year : ")))
     if n==2:
@@ -46,5 +54,10 @@ while True:
         m=days_months(eval(input("Enter a month : ")))
     if n==4:
         w=weeks_month(eval(input("Enter a Month : ")))
+    if n==5:
+        d=days_to_month(int((input("Enter Number of Days To Convert in Month : "))))
     if n==0:
         exit(0)
+    k=int(input("Enter 9 To Continue : "))
+    if k==9:
+        continue
