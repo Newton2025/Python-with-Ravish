@@ -1,4 +1,7 @@
 s=input("Enter a String : ")
+
+print(s.upper())
+
 r=s[::-1]
 if s==r:
     print("Your String ===> '{}' after reverse ===> {}".format(s,r))
