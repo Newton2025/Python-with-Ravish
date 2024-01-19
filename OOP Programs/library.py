@@ -7,20 +7,20 @@ class Library:
     def set_book_name(self,book_name):
         self.book_name=book_name
 
-    def get_book_name(self):
-        return self.book_name
+    # def get_book_name(self):
+    #     return self.book_name
            
     def set_bookid(self,book_id):
         self.bookid=book_id
         
-    def get_bookid(self):
-        return self.bookid
+    # def get_bookid(self):
+    #     return self.bookid
 
     def set_price(self,price):
         self.price=price
         
-    def get_price(self):
-        return self.price
+    # def get_price(self):
+    #     return self.price
 
     def get_book_info(self):
         book_info = {}

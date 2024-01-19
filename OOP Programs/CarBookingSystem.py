@@ -40,6 +40,6 @@ while process:
 print(f"Congrats! Today you had 100 trips")
 print("PICKUP LOCATION\t\tDROP LOCATION" )
 
-for trip in listTrip:
+for i in listTrip:
     tripDetail = trip.getTripDetail() 
     print("{}\t\t\t{}".format(tripDetail['Pickup Location'],tripDetail['Drop Location']))
